@@ -1,0 +1,255 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo img {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: contrast(3);
+
+}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 105px;
+    scroll-behavior: smooth;
+  
+}
+
+
+
+/* logo and image */
+#logo {
+    margin: 34px 45px;
+    height: 6px;
+}
+
+#logo img {
+    height: 100px;
+    width: 100px;
+    margin: -45px -44px;
+    transition: .5s;
+
+}
+
+#logo img:hover {
+    transform: translate3d(0px, 30px, 0px);
+
+
+
+}
+
+/* list styling */
+#navbar ul {
+    display: flex;
+    list-style: none;
+    height: 65px;
+    margin-left: 120px;
+}
+
+
+#navbar ul li {
+    /* color: white; */
+    list-style: none;
+    font-size: 2.9rem;
+
+}
+
+#navbar::before {
+    content: "";
+
+
+    background-color: rgb(13, 128, 235);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li a {
+
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 1.0s;
+}
+
+#navbar ul li a:hover {
+    color: rgb(243, 249, 237);
+    background-color: red;
+    /* display: block;
+    padding: 3px 22px;
+    border-radius: 220px;
+    text-decoration: none; */
+    transform: rotatez(360deg);
+}
+
+
+.avatar{
+    font-size: 75px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     color: lavenderblush;
+     font-style: oblique;
+     font-display: blur;
+   
+}
+
+.young{
+    font-size: 55px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     color: lavenderblush;
+     font-style: oblique;
+     font-display: blur;
+   
+}
+.image {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    right: 950px;
+
+
+}
+
+#img1 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 15px;
+filter: contrast(3);
+}
+
+#img2 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 15px;
+   filter: contrast(3); 
+}
+
+#img3 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 15px;
+
+filter: contrast(3);
+}
+
+#img4 img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 15px;
+
+filter: contrast(3);
+}
+
+
+.image li {
+   display: inline-block;
+    margin: 0px 2px;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.image li:hover {
+    transform: translate3d(0px, -30px, -0px);
+}
+
+/* .circle {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAurtBa22kK48q19TNeldTC6X9kjO5EpGYiA&usqp=CAU);
+    clip-path: circle(600px at right 1000px);
+
+} */
+
+.circle {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSsRGonlN2FkyiUvFAlXbJilnnLd-5iZj61Q&usqp=CAU);
+    clip-path: circle(600px at right 1000px);
+/* filter: contrast(5); */
+/* filter: invert(20); */
+} 
+
+.anime img{
+    display: flex;
+    position: absolute;
+height: 850px; 
+right: 0px;
+
+
+
+
+}
+
+h1{
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 200px;
+    background: linear-gradient(rgb(119, 255, 0), rgb(0, 128, 126));
+}
+
+*{
+    animation: bgcolor infinite 20s;
+    /* background-color: black; */
+}
+ 
+   @keyframes bgcolor{
+    0%{
+        background: rgb(38, 33, 33);
+    }
+    20%{
+        background: rgb(57, 57, 51);
+    }
+    40%{
+        background: rgb(36, 45, 36);
+    }
+    60%{
+        background: rgb(17, 64, 75);
+    }
+    80%{
+        background: rgb(98, 97, 96);
+    }
+    100%{
+        background:rgb(179, 172, 172); 
+    }
+}    
+                                                                                             
+
+/* media query */
+
+
+#btn, #cancel{
+   color: red;
+    float: right;
+    font-size: 30px;
+    line-height: 20px;
+    position: relative;
+    left: 2050px;
+    top: -20px;
+    margin: 12px;
+    cursor: pointer;
+    display: none;
+}
+
+/* hamberger menu */
